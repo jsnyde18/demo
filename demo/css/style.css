@@ -1,0 +1,102 @@
+/* This is my comment. Get it by typing, highlighting, and hitting command & forward slash */
+
+h1 {
+    font-size: 36px;
+    color: salmon;
+    font-family: "Black Ops One", system-ui;
+    text-transform: uppercase;
+    font-style: italic
+
+}
+
+h2 {
+    color: royalblue;
+}
+
+body {
+    background-color:lightcyan;
+}
+
+p, ol, ul {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+a {
+    color: orchid
+}
+
+img {
+    border-width: 500px;
+    border: salmon;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+.open-sans-800 {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.salmon{
+    color: salmon
+}
+
+.brown-text {
+    color:brown;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline
+}
+
+/* .header {
+    border: double rebeccapurple 40px; 
+    text-align: center;
+    padding: 10px 5px 10px 5px;
+    margin: 10px;
+    min-height: 70px
+} */
+
+.black-ops-one-regular {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* .container {
+    width: 960px;
+    height: 2000px;
+    background-color: cadetblue;
+    margin: 0 auto 0 auto;
+
+
+    /* border: black solid 2px */
+/* } */
+
+.header {
+    height: 100px;
+    background-color: brown;
+    text-align: center
+}
+
+.sidebar {
+    width: 300px;
+    background-color: goldenrod;
+    text-align: center;
+    display: flex;
+}
+
+.content{
+    width: 60px;
+    background-color: greenyellow;
+    display: flex;
+}
+
+.main {
+    display: flex;
+}
