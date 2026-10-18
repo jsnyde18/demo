@@ -56,7 +56,7 @@ a:hover {
 }
 
 .name {
-    color: #3d8740;
+    color: #2e6f31;
     font-weight: bold;
 }
 
@@ -92,16 +92,20 @@ a:hover {
 
 .btn-primary {
     font-family: 'Space Grotesk', sans-serif;
-    --bs-btn-color: #3d8740;
+    --bs-btn-color: #2e6f31;
     --bs-btn-bg: #ffffff;
-    --bs-btn-border-color: #3d8740;
+    --bs-btn-border-color: #2e6f31;
     --bs-btn-hover-color: #ffffff;
-    --bs-btn-hover-bg: #3d8740;
-    --bs-btn-hover-border-color: #3d8740;
+    --bs-btn-hover-bg: #2e6f31;
+    --bs-btn-hover-border-color: #2e6f31;
     --bs-btn-active-color: #ffffff;
     --bs-btn-active-bg: #244f25;
     --bs-btn-active-border-color: #244f25;
     --bs-btn-focus-shadow-rgb: 61, 135, 64;
+    transition: color 0.3s ease, background-color 0.3s ease,
+        border-color 0.3s ease, box-shadow 0.3s ease,
+        transform 0.3s ease;
+
 }
 
 .btn-primary:hover {
@@ -142,6 +146,9 @@ header .nav-link:focus {
     text-decoration: underline;
     text-shadow: 0 0 0.6px currentColor, 0 0 0.6px currentColor;
     transform: scale(1.05);
+}
+
+header .nav-link:focus-visible {
     box-shadow: 0 0 0 0.25rem #5ac04c66;
 }
 
@@ -153,9 +160,9 @@ header .btn {
     --bs-btn-hover-color: #222623;
     --bs-btn-hover-bg: #5ac04c;
     --bs-btn-hover-border-color: #5ac04c;
-    --bs-btn-active-color: #222623;
-    --bs-btn-active-bg: #3d8740;
-    --bs-btn-active-border-color: #3d8740;
+    --bs-btn-active-color: #ffffff;
+    --bs-btn-active-bg: #244f25;
+    --bs-btn-active-border-color: #244f25;
     --bs-btn-focus-shadow-rgb: 90, 192, 76;
     transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
 }
@@ -228,6 +235,52 @@ footer a:focus-visible {
 
 /* hero.html css starts here */
 
-.hero{
-    background-image: url(../images/)
+.hero {
+    position: relative;  
+    overflow: hidden;     
+    isolation: isolate;   
+    min-height: 600px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: linear-gradient(to bottom, #00000000, #000000), url(../images/apple-creator-studio-icons.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(4px);
+    transform: scale(1.1);
+}
+
+.hero h1 {
+    color: #ffffff;
+}
+
+.hero .lead {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.btn-reading-list {
+    font-family: 'Space Grotesk', sans-serif;
+    --bs-btn-color: #3d8740;              /* green text */
+    --bs-btn-bg: transparent;             /* see-through button */
+    --bs-btn-border-color: #3d8740;       /* green outline */
+    --bs-btn-hover-color: #ffffff;        /* hover: matches Read Article */
+    --bs-btn-hover-bg: #3d8740;
+    --bs-btn-hover-border-color: #3d8740;
+    --bs-btn-active-color: #ffffff;       /* while clicking */
+    --bs-btn-active-bg: #244f25;
+    --bs-btn-active-border-color: #244f25;
+    --bs-btn-focus-shadow-rgb: 61, 135, 64;
+    transition: color 0.3s ease, background-color 0.3s ease,
+        border-color 0.3s ease, box-shadow 0.3s ease,
+        transform 0.3s ease;
+}
+
+.btn-reading-list:hover {
+    transform: scale(1.05);
 }
