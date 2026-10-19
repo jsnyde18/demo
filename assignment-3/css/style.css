@@ -89,7 +89,6 @@ a:hover {
     font-family: 'Space Grotesk', sans-serif;
 }
 
-
 .btn-primary {
     font-family: 'Space Grotesk', sans-serif;
     --bs-btn-color: #2e6f31;
@@ -105,7 +104,6 @@ a:hover {
     transition: color 0.3s ease, background-color 0.3s ease,
         border-color 0.3s ease, box-shadow 0.3s ease,
         transform 0.3s ease;
-
 }
 
 .btn-primary:hover {
@@ -172,7 +170,6 @@ header .btn:focus-visible {
     transform: scale(1.05);
 }
 
-
 header .form-control {
     font-family: 'Space Grotesk', sans-serif;
 }
@@ -236,9 +233,9 @@ footer a:focus-visible {
 /* hero.html css starts here */
 
 .hero {
-    position: relative;  
-    overflow: hidden;     
-    isolation: isolate;   
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
     min-height: 600px;
 }
 
@@ -266,13 +263,13 @@ footer a:focus-visible {
 
 .btn-reading-list {
     font-family: 'Space Grotesk', sans-serif;
-    --bs-btn-color: #3d8740;              /* green text */
-    --bs-btn-bg: transparent;             /* see-through button */
-    --bs-btn-border-color: #3d8740;       /* green outline */
-    --bs-btn-hover-color: #ffffff;        /* hover: matches Read Article */
+    --bs-btn-color: #3d8740;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: #3d8740;
+    --bs-btn-hover-color: #ffffff;
     --bs-btn-hover-bg: #3d8740;
     --bs-btn-hover-border-color: #3d8740;
-    --bs-btn-active-color: #ffffff;       /* while clicking */
+    --bs-btn-active-color: #ffffff;
     --bs-btn-active-bg: #244f25;
     --bs-btn-active-border-color: #244f25;
     --bs-btn-focus-shadow-rgb: 61, 135, 64;
